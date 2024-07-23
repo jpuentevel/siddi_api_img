@@ -10,9 +10,7 @@ from PIL import Image
 import os
 
 app = Flask(__name__)
-app.config.from_object(Config)
 
-mysql = init_db(app)
 CORS(app)
 api = Api(app)
 
