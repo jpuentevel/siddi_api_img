@@ -59,3 +59,6 @@ class imagen(Resource):
             return {"message": "Invalid file or file extension not allowed"}, 400
 
 api.add_resource(imagen, '/imagen')
+
+if __name__ == '__main__':
+    app.run(debug=True)
